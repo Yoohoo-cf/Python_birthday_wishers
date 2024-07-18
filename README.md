@@ -16,12 +16,12 @@ Ensure you have the following installed:
 
 ## Setup
 
-    Environment Variables: Create a .env file in the same directory as your script and add your email credentials.
+    1. Environment Variables: Create a .env file in the same directory as your script and add your email credentials.
 
-    MY_EMAIL=your_email@gmail.com
-    MY_PASSWORD=your_email_password
+        MY_EMAIL=your_email@gmail.com
+        MY_PASSWORD=your_email_password
 
-    CSV File: Prepare a birthdays.csv file with the following columns:
+    2. CSV File: Prepare a birthdays.csv file with the following columns:
 
         name: Name of the person
         email: Email address of the person
@@ -36,8 +36,8 @@ Ensure you have the following installed:
             John Doe,john.doe@example.com,7,17
             Jane Smith,jane.smith@example.com,7,18
 
-    Letter Templates: Create a directory named letter_templates and add your letter templates.
-    Each template should contain [NAME] placeholder where the name of the person should be inserted.
+    3. Letter Templates: Create a directory named letter_templates and add your letter templates.
+       Each template should contain [NAME] placeholder where the name of the person should be inserted.
 
 ## Usage
 
@@ -45,17 +45,17 @@ Ensure you have the following installed:
 
 The script will:
 
-    Load the environment variables.
-    Read the current date.
-    Load the birthday records from birthdays.csv.
-    Select a random letter template.
-    Replace the [NAME] placeholder with the actual name.
-    Send an email if today's date matches a birthday record.
+    ~ Load the environment variables.
+    ~ Read the current date.
+    ~ Load the birthday records from birthdays.csv.
+    ~ Select a random letter template.
+    ~ Replace the [NAME] placeholder with the actual name.
+    ~ Send an email if today's date matches a birthday record.
 
 ## Notes
 
-    Make sure to create an App Password if you have 2-Step Verification enabled.
-    The script uses the SMTP server of Gmail. Modify the SMTP settings if you are using a different email provider.
+    ~ Make sure to create an App Password if you have 2-Step Verification enabled.
+    ~ The script uses the SMTP server of Gmail. Modify the SMTP settings if you are using a different email provider.
 
 ## License
 
